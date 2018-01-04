@@ -13,11 +13,13 @@ install:
 - constructor .
 
 deploy:
-  provider: releases
-  all_branches: true
-  api_key:
-    secure: kljCHJcJtE9n6SWsSS649ZS2O0eF2PiGAStg8bmVMzgWq3GWSwYzJ/3xSyLjw0wWqKapsMSzaPcpbiR/YqAauDw70lwnKgbZcVeAP7Rx9IoWIp+16YLk2LPKOl+y98wY82UdRzxHEShZEvrWFJhdGskP4+nqMjGGKhyz2oUNJaQ50NocR0ZQNHVqOoN8F5kA1j7Hmuj4kinKh3qy4YENrjn/r2S2628Om4p/cGwkaXnLS3sVpz3r75QJXBHAJNPTsOvM3CWanjYUdxtkocui7/T/7+ErVkOPlyYSRDwKac7w5hi6ltyEKEYB8ZdWLQuOAIUGjH3oyHDgma+vmCytwd/yqGtu5VUyhcm0HmZxghbtki8hd5RXW94BF835rHDvUZUJumCjo/fvt2ln6kYkcNZ2W8MZe/HzOMa6wAmvsIzhuBBQcgDqaH6Wa5I++pdGw8cNQdSdt7ZI5v+T4mYchrYl+a2fsorPdvOyFl5z4hz+85urq0vs95690Og9PJ/ViBhZm8w7SBB/93dZ3w+V89k40YPLSf7Ko/bLWY+3L+8PzER4SKHQVuEmH3B5YdgnmC0PVJ6B+i0x8+ELQVUaPoYcnByzf+FFSqOzhOOhOU8reArnxAiyHcP/5UXpj5gP28Fl2HUqNWHww8ajn0NKSIF+LlQaE3Iv08oVX5mHDQM=
-  file: R-Jupyter-Notebook*.sh
-  on:
-    repo: terhorst/r-jupyter-notebook
-    tags: true
+   provider: releases
+   skip_cleanup: true
+   all_branches: true
+   api_key:
+     secure: kljCHJcJtE9n6SWsSS649ZS2O0eF2PiGAStg8bmVMzgWq3GWSwYzJ/3xSyLjw0wWqKapsMSzaPcpbiR/YqAauDw70lwnKgbZcVeAP7Rx9IoWIp+16YLk2LPKOl+y98wY82UdRzxHEShZEvrWFJhdGskP4+nqMjGGKhyz2oUNJaQ50NocR0ZQNHVqOoN8F5kA1j7Hmuj4kinKh3qy4YENrjn/r2S2628Om4p/cGwkaXnLS3sVpz3r75QJXBHAJNPTsOvM3CWanjYUdxtkocui7/T/7+ErVkOPlyYSRDwKac7w5hi6ltyEKEYB8ZdWLQuOAIUGjH3oyHDgma+vmCytwd/yqGtu5VUyhcm0HmZxghbtki8hd5RXW94BF835rHDvUZUJumCjo/fvt2ln6kYkcNZ2W8MZe/HzOMa6wAmvsIzhuBBQcgDqaH6Wa5I++pdGw8cNQdSdt7ZI5v+T4mYchrYl+a2fsorPdvOyFl5z4hz+85urq0vs95690Og9PJ/ViBhZm8w7SBB/93dZ3w+V89k40YPLSf7Ko/bLWY+3L+8PzER4SKHQVuEmH3B5YdgnmC0PVJ6B+i0x8+ELQVUaPoYcnByzf+FFSqOzhOOhOU8reArnxAiyHcP/5UXpj5gP28Fl2HUqNWHww8ajn0NKSIF+LlQaE3Iv08oVX5mHDQM=
+   file_glob: true
+   file: R-Jupyter-Notebook*.sh
+   on:
+     repo: terhorst/r-jupyter-notebook
+     tags: true
