@@ -24,6 +24,10 @@ build_script:
 
     Start-Process $conda\Scripts\constructor.exe -ArgumentList "." -Wait -RedirectStandardOutput stdout.txt -RedirectStandardError stderr.txt
 
+    Get-Content stdout.txt
+
+    Get-Content stderr.txt
+
     dir
 
     Update-AppveyorBuild -Version "$ver"
