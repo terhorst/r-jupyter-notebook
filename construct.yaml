@@ -10,8 +10,4 @@ specs:
     - r-base
     - r-irkernel
     - r-tidyverse
-
-exclude:
-    - qt
-    - sip
-    - pyqt
+    - anaconda-navigator
