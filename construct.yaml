@@ -2,8 +2,9 @@ name: Jupyter-R-notebook
 
 channels:
     - http://repo.continuum.io/pkgs/free/
-    - https://repo.continuum.io/pkgs/r/
-
+    - http://repo.continuum.io/pkgs/r/
+    - http://repo.continuum.io/pkgs/msis2/ [win]
+    
 specs:
     - jupyter
     - r-base
