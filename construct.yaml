@@ -11,3 +11,5 @@ specs:
     - r-irkernel
     - r-tidyverse
     - anaconda-navigator
+    - console-shortcut
+    - menuinst
