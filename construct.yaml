@@ -10,6 +10,6 @@ specs:
     - r-base
     - r-irkernel
     - r-tidyverse
-    - anaconda-navigator
-    - console-shortcut
-    - menuinst
+    - anaconda-navigator  # [not unix]
+    - console-shortcut  # [not unix]
+    - menuinst  # [not unix]
